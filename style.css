@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 105vh;
+    background-image: url(imagens/fundo\ teste2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: .5s;
+}
+
+.barra_navegacao {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+
+a {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    margin-right: 3vw;
+    font-weight: 700;
+    color: black;
+    overflow: hidden;
+}
+
+#links_nav:hover {
+    font-size: 1.6vw;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+
+.icones {
+    width: 2vw;
+    margin-left: 1px;
+    vertical-align: middle;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    gap: 5vw;
+}
+
+.titulo_apresentacao {
+    margin-bottom: 2vw;
+    color: black;
+}
+
+.apresentacao {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.3vw;
+    width: 700px;
+    margin-left: 5vw;
+    text-align: justify;
+}
+
+.links {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+.redes_sociais {
+    display: flex;
+    margin-top: 1vh;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.foto {
+    width: 23vw;
+    border: 4px solid black;
+    box-shadow: 10px 10px 15px;
+    border-radius: 200px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.eu {
+    font-family: "Libre Baskerville", serif;
+    margin: 2vh 0 0 2vw;
+}
+
+.trilho {
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark {
+    background-color: antiquewhite;
+}
+
+.trilho.dark .indicador {
+    left: 25px;
+    background-color: black;
+}
+
+body.dark {
+    background-image: url(imagens/fundo\ dark.png);
+    color: white;
+}
+
+body.dark a {
+    color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+body.dark .icones {
+    background-color: white;
+    border-radius: 150px;
+}
+
+.imagem_projeto {
+    width: 14vw;
+    margin: 2vw;
+    display: flex;
+    box-shadow: 10px 10px 15px;
+    border-radius: 5px;
+}
+
+.foto_habilidade {
+    width: 25vw;
+}
+
+@media (max-width:756px) {
+    body {
+        background-size: cover;
+
+    }
+
+    a {
+        font-size: 4vw;
+    }
+
+    .icones {
+        width: 4vw;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao {
+        margin-top: 4vw;
+        font-size: 4vw;
+        width: 400px;
+    }
+
+    .foto {
+        width: 40vh;
+    }
+
+    .rodape {
+        margin-top: 4vh;
+        font-size: 3vw;
+    }
+
+    .imagem_projeto {
+        width: 30vw;
+    }
+
+    .foto_habilidade {
+        width: 70vw;
+    }
+}
